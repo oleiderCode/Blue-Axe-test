@@ -1,0 +1,103 @@
+/* Cabecera con botón de cierre */
+.pokemon-inf__header {
+display: flex
+;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 15px;
+}
+
+.pokemon-inf__header span {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #999;
+  transition: color 0.3s;
+}
+
+.pokemon-inf__header span:hover {
+  color: #e74c3c;
+}
+
+/* Imagen del Pokémon */
+.pokemon-inf__img {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.pokemon-inf__img img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Nombre del Pokémon */
+.pokemon-inf__name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Tipos y habilidades */
+.pokemon-inf__types {
+    display: flex
+;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    width: 70%;
+    min-width: 295px;
+}
+
+.pokemon-inf__type {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.pokemon-inf__types ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.pokemon-inf__types li {
+  text-transform: capitalize;
+}
+
+/* Estilo para títulos y valores */
+.pokemon-inf__types h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pokemon-inf__types p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pokemon-inf__abilities {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.pokemon-inf__abilities ul {
+  margin-bottom: 20px;
+}
+
+.pokemon-inf__stats{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    width: 70%;
+    min-width: 295px;
+}
+

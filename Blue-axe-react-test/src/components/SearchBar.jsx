@@ -98,7 +98,10 @@ function SearchBar({ searchTerm, setSearchTerm, suggestions, setSuggestions, all
 
       {showPopup && validNames.includes(searchTerm.toLowerCase()) && (
         <div className="pokemon-inf-container">
-          <PokemonInf nombre={searchTerm} onClick={() => setShowPopup(false)} />
+          <PokemonInf 
+            nombre={searchTerm} 
+            onClick={() => setShowPopup(false)}
+            funcion={() => setShowPopup()} />
         </div>
       )}
     </div>
