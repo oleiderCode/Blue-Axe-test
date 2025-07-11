@@ -11,4 +11,26 @@ h1{
 section{
   width: 90vw;
   margin: 0 auto;
+  margin-top: 20px;
+}
+
+.navigation-buttons-container{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+.navigation-buttons-container button{
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  color: rgb(33, 33, 33);
+  cursor: pointer;
+  height: 53px;
+  font-size: 16px;
+  font-weight: 700;
 }

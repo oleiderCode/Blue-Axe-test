@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgba(28, 28, 28, 0.683);
     margin: 20px 0;
     width: fit-content;
     margin: 0 auto;
     border-radius: 8px;
     overflow: hidden;
     padding: 2px 5px;
+    background-color: #fff;
 
 }
 
@@ -25,7 +26,9 @@ input[type="text"]:focus{
 }
 
 .suggestions-list{
+    position: absolute;
     margin: 0 auto;
+    left: calc(50vw - 175px);
     width: 350px;
     display: flex;
     flex-direction: column;
@@ -35,17 +38,64 @@ input[type="text"]:focus{
     margin-top: 15px;
     border: 1px solid black;
     z-index: 99999;
-    position: absolute;
-    left: calc(50vw - 175px);
     backdrop-filter: blur(11px);
+    overflow-y: auto;
+    max-height: 150px;
 }
+
 
 
 svg{
     width: 20px;
 }
 
-.hidde{
+.suggestions-list.hide {
+  display: none;
+}
+
+
+.search-button{
+    height: 100%;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    transform: scale(1.02); 
     transition: all 0.3s ease-in-out;
-    display: none ;
+}
+
+
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+
+
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background: #f0f0f0;
+}
+
+.pokemon-inf-container {
+  margin-top: 10px;
 }

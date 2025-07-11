@@ -13,3 +13,7 @@ export const fetchPokemonDetails = (url) => {
 export const fetchAllPokemonNames = () => {
   return Axios.get(`${API_BASE}/pokemon-species?limit=1300`)
 }
+
+export const fetchAllPokemonInf = (name) => {
+  return Axios.get(`${API_BASE}/pokemon/${name}`)
+}

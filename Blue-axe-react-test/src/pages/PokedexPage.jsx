@@ -37,7 +37,7 @@ function PokedexPage() {
         suggestions={suggestions}
         setSuggestions={setSuggestions}
         allPokemonNames={allPokemonNames}
-        onSelect={handleSelectPokemon} // Aquí se pasa
+        // onSelect={handleSelectPokemon} // Aquí se pasa
       />
 
 
@@ -47,7 +47,7 @@ function PokedexPage() {
 
       </section>
 
-      <div className="f">
+      <div className="navigation-buttons-container">
         <button onClick={() => prevUrl && setCurrentUrl(prevUrl)} disabled={!prevUrl}>
           Anterior
         </button>
