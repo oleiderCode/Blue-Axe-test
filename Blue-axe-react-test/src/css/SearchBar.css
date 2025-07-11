@@ -129,3 +129,8 @@ input {
     box-sizing: border-box;
 
 }
+@media (max-width: 600px) {
+  .search-bar {
+    width: 80%;
+  }
+}

@@ -101,3 +101,14 @@ display: flex
     min-width: 295px;
 }
 
+@media (max-width: 600px) {
+  .pokemon-inf-container {
+    height: 100%;
+    position: fixed;
+  }
+
+  .pokemon-inf{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

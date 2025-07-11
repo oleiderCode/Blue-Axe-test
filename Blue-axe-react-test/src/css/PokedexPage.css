@@ -1,3 +1,8 @@
+.author{
+  display: flex;
+  position: fixed;
+}
+
 h1{
   color: #333;
   font-size: 50px;
@@ -33,4 +38,11 @@ section{
   height: 53px;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media  (max-width: 600px) {
+  .navigation-buttons-container {
+    margin-bottom: 50px;
+  }
+  
 }

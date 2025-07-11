@@ -18,11 +18,13 @@ function PokedexPage() {
   } = usePokemonData()
 
   const handleSelectPokemon = async (name) => {
+    // console.log('Pokémon seleccionado x2:', name)
     try {
       const { data } = await fetchPokemonDetails(`https://pokeapi.co/api/v2/pokemon/${name}`)
-      // Puedes hacer lo que quieras aquí, por ejemplo:
-      console.log('Pokémon seleccionado:', data)
-      // Mostrar modal, agregarlo a una lista, etc.
+      // console.log('Pokémon seleccionado:', name, data)
+      // si la data contiene información del Pokémon
+      
+
     } catch (err) {
       console.error('Error al cargar el Pokémon:', err)
     }
@@ -30,6 +32,7 @@ function PokedexPage() {
 
   return (
     <div className="">
+      <div className='author'>Dev: Oleider Gonzalez</div>
       <h1 className="">Pokédex</h1>
       <SearchBar
         searchTerm={searchTerm}
@@ -43,7 +46,10 @@ function PokedexPage() {
 
       <section className="pokemon-list">
 
-        <PokemonList pokemons={pokemons} />
+        <PokemonList
+        pokemons={pokemons}
+        onSelectPokemon={handleSelectPokemon}
+        />
 
       </section>
 
